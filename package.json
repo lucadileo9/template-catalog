@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "new-template": "plop template",
+    "new-route": "plop route",
     "plop": "plop",
     "plop:pizzeria": "cd templates/pizzeria-template && npx plop",
     "plop:estetista": "cd templates/estetista-template && npx plop"

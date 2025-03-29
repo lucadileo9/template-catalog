@@ -1,0 +1,12 @@
+// templates/{{kebabCase templateName}}-template/app/{{kebabCase routeName}}/page.tsx
+
+import React from 'react';
+
+export default function {{properCase routeName}}Page() {
+  return (
+    <div>
+      <h1>Pagina {{properCase routeName}}</h1>
+      <p>Questa è la pagina {{routeName}} del template {{properCase templateName}}.</p>
+    </div>
+  );
+}
