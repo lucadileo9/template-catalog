@@ -55,8 +55,8 @@ module.exports = {
       // Crea la cartella styles con il file global.css
       {
         type: "add",
-        path: "templates/{{kebabCase name}}-template/styles/global.css",
-        templateFile: ".plop/templates/template/global-css.hbs",
+        path: "templates/{{kebabCase name}}-template/styles/globals.css",
+        templateFile: ".plop/templates/template/globals-css.hbs",
       },
       // Crea la cartella public con la sottocartella images
       {

@@ -6,7 +6,8 @@ const templates = [
 ];
 
 export default function HomePage() {
-  return (
+  return (    <>     
+  <header> qualcosa </header> {/* Sostituisci con il tuo header */}
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-4">Elenco Template</h1>
       <ul>
@@ -19,5 +20,7 @@ export default function HomePage() {
         ))}
       </ul>
     </div>
+  <footer></footer> {/* Sostituisci con il tuo footer */}
+            </>
   );
 }
