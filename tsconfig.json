@@ -22,9 +22,16 @@
     "paths": {
       "@atoms/*": ["./app/components/atoms/*"],
       "@molecules/*": ["./app/components/molecules/*"],
-      "@organisms/*": ["./app/components/organisms/*"]
+      "@organisms/*": ["./app/components/organisms/*"],
+      "@templates/*": ["./templates/*"]
+
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
-  "exclude": ["node_modules"]
+"include": [
+  "next-env.d.ts",
+  "**/*.ts",
+  "**/*.tsx",
+  ".next/types/**/*.ts",
+  "templates/**/*"
+],  "exclude": ["node_modules"]
 }

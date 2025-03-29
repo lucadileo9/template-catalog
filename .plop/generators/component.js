@@ -1,3 +1,5 @@
+const path = require("path");
+
 module.exports = {
     description: "Atomic Design component creation logic",
     prompts: [
@@ -42,12 +44,12 @@ module.exports = {
       {
         type: "add",
         path: "./app/components/{{level}}/{{pascalCase name}}/index.tsx",
-        templateFile: "./.plop/templates/component/component.hbs",
+        templateFile: path.resolve(__dirname, "../templates/component/component.hbs"),
       },
       {
         type: "add",
         path: "./app/components/{{level}}/{{pascalCase name}}/index.types.ts",
-        templateFile: "./.plop/templates/component/types.hbs",
+        templateFile: path.resolve(__dirname, "../templates/component/types.hbs"),
       },
     ],
   }
