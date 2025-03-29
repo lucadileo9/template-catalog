@@ -1,27 +1,31 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
+// app/layout.tsx
 
-const inter = Inter({ subsets: ['latin'] })
+import './globals.css';
+import { Inter } from 'next/font/google';
+
+const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
-  title: 'Titolo del sito',
-  description: 'Questi sono i metadati del sito',
-}
+  title: 'Template Catalog',
+  description: 'Un catalogo di template Next.js',
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        <header> </header> {/* Sostituisci con il tuo header */}
-          <main>
-            {children}
-          </main>  
-        <footer></footer> {/* Sostituisci con il tuo footer */}
-        </body>
+        <main>{children}</main>
+        {/* Pulsante per tornare al catalogo */}
+        <div style={{ position: 'fixed', bottom: '20px', right: '20px' }}>
+          <a href="/" style={{ padding: '10px 20px', background: '#33FF57', color: 'white', borderRadius: '5px', textDecoration: 'none' }}>
+            Torna al Catalogo
+          </a>
+        </div>
+      </body>
     </html>
-  )
+  );
 }

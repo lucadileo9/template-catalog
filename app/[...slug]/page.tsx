@@ -25,6 +25,11 @@ export default async function TemplatePage({ params }: TemplatePageParams) {
   }
 
   try {
+    // Carica dinamicamente il layout del template
+    const TemplateLayout = dynamic<{ children: React.ReactNode }>(() => import(`../../templates/${templateName}-template/app/layout`), {
+      loading: () => <p>Caricamento layout...</p>,
+    });
+
     let TemplateApp;
 
     if (subPath.length > 0) {
@@ -37,7 +42,11 @@ export default async function TemplatePage({ params }: TemplatePageParams) {
       });  
     }
 
-    return <TemplateApp />;
+    return (
+      <TemplateLayout>
+        <TemplateApp />
+      </TemplateLayout>
+    );
   } catch (error) {
     console.error('Errore durante il caricamento del template:', error);
     notFound();
