@@ -19,11 +19,21 @@
         "name": "next"
       }
     ],
+    "baseUrl": ".",
     "paths": {
-      "@atoms/*": ["./app/components/atoms/*"],
-      "@molecules/*": ["./app/components/molecules/*"],
-      "@organisms/*": ["./app/components/organisms/*"],
-      "@templates/*": ["./templates/*"]
+      "@app/*": ["app/*"], // File globali dell'app
+      "@global-ui/*": ["components/ui/*"], // Componenti UI globali (ShadCN)
+      "@global-utils/*": ["components/utils/*"], // Utility globali
+      "@global-lib/*": ["components/lib/*"], // Librerie globali
+      "@global-atoms/*": ["components/atoms/*"], // Atomi globali
+      "@global-molecules/*": ["components/molecules/*"], // Molecole globali
+      "@global-organisms/*": ["components/organisms/*"], // Organismi globali
+      "@public/*": ["public/*"], // Asset statici globali
+      "@templates/*": ["templates/*"], // Template globali
+
+      "@pizzeria/*": ["templates/pizzeria-template/*"], // Risorse del template pizzeria
+      "@estetista/*": ["templates/estetista-template/*"], // Risorse del template estetista
+
 
     }
   },
