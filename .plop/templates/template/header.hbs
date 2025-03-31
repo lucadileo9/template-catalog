@@ -1,0 +1,27 @@
+// components/molecules/{{pascalCase name}}/index.tsx
+
+import React from "react";
+import { {{pascalCase name}}Props } from "./index.types";
+import Link from 'next/link';
+import Image from "next/image";
+
+const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = () => {
+  return (
+    <header className="sticky flex w-screen py-6 justify-between bg-[#FDF7F7] absolute top-0 z-10">
+        <Link href="/" >
+          <Image src="" alt="Logo"   width={1772} height={1773} className="px-10  justify-center item-start  h-[53px] w-auto cursor-pointer" />
+        </Link>
+
+        <nav className="inline-flex center space-x-5" >
+          <Link href="" className="">Elemento 1</Link>
+          <Link href=""  className="">Elemento 2</Link>
+        </nav>
+
+        <div className="inline-flex  items-end px-10  space-x-3">
+            <button>Qualcosa</button>
+        </div>
+    </header>
+  );
+};
+
+export default {{pascalCase name}};

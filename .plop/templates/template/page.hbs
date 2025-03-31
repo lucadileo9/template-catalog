@@ -1,10 +1,12 @@
+// templates/{{kebabCase name}}-template/app/page.tsx
+
 import React from 'react';
+import { Hero } from '@{{kebabCase name}}/components/molecules/Hero';
 
 export default function HomePage() {
   return (
     <>
-      <h1>Benvenuti nel template {{kebabCase name}}</h1>
-      <p>Questa è la homepage del tuo nuovo template.</p>
+      <Hero />
     </>
   );
 }

@@ -1,7 +1,9 @@
 // templates/{{kebabCase name}}-template/app/layout.tsx
 
-import './styles/global.css'; // Importa i propri stili globali
+import './styles/globals.css'; // Importa i propri stili globali
 import { Inter } from 'next/font/google';
+import { Header } from '@{{kebabCase name}}/components/molecules/Header';
+import { Footer } from '@{{kebabCase name}}/components/molecules/Footer';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -16,20 +18,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    // Quando questo template viene usato al di fuori del catalogo, aggiungi <html> e <body> qui
-    // Esempio:
-    // <html lang="en">
-    //   <body className={inter.className}>
-        <main className={inter.className}>
-          <header>
-            {/* Header specifico del template */}
-          </header>
-          <main>{children}</main>
-          <footer>
-            {/* Footer specifico del template */}
-          </footer>
-        </main>
-    //   </body>
-    // </html>
+    <html lang="en">
+      <body className={inter.className}>
+        <Header />
+        <main>{children}</main>
+        <Footer />
+      </body>
+    </html>
   );
 }

@@ -70,6 +70,39 @@ module.exports = {
         path: "config/templates.ts",
         pattern: /(\bvalidTemplates\s*=\s*\[)([^\]]*)(\])/,
         template: "$1$2{{#if $2}}, {{/if}}'{{name}}',$3"
-        },
+      },
+      // Crea il componente Header
+    {
+      type: "add",
+      path: "templates/{{kebabCase name}}-template/components/molecules/Header/index.tsx",
+      templateFile: ".plop/templates/template/header.hbs",
+    },
+    {
+      type: "add",
+      path: "templates/{{kebabCase name}}-template/components/molecules/Header/index.types.ts",
+      templateFile: ".plop/templates/component/types.hbs",
+    },
+    // Crea il componente Footer
+    {
+      type: "add",
+      path: "templates/{{kebabCase name}}-template/components/molecules/Footer/index.tsx",
+      templateFile: ".plop/templates/template/footer.hbs",
+    },
+    {
+      type: "add",
+      path: "templates/{{kebabCase name}}-template/components/molecules/Footer/index.types.ts",
+      templateFile: ".plop/templates/component/types.hbs",
+    },
+    // Crea il componente Hero
+    {
+      type: "add",
+      path: "templates/{{kebabCase name}}-template/components/molecules/Hero/index.tsx",
+      templateFile: ".plop/templates/template/hero.hbs",
+    },
+    {
+      type: "add",
+      path: "templates/{{kebabCase name}}-template/components/molecules/Hero/index.types.ts",
+      templateFile: ".plop/templates/component/types.hbs",
+    },
     ],
   };
