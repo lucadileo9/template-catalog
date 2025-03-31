@@ -40,12 +40,6 @@ module.exports = {
         path: "templates/{{kebabCase name}}-template/config.js",
         templateFile: ".plop/templates/template/config.hbs",
       },
-      // Crea il plopfile.js per il template
-      {
-        type: "add",
-        path: "templates/{{kebabCase name}}-template/plopfile.js",
-        templateFile: ".plop/templates/template/plopfile.hbs",
-      },
       // Crea il file di descrizione del template
       {
         type: "add",
@@ -64,5 +58,18 @@ module.exports = {
         path: "templates/{{kebabCase name}}-template/public/images/placeholder.png",
         templateFile: ".plop/templates/template/placeholder-image.hbs",
       },
+      {
+        type: "modify",
+        path: "tsconfig.json",
+        pattern: /"paths":\s*{/,
+        template: `"paths": {\n      "@{{kebabCase name}}/*": ["templates/{{kebabCase name}}-template/*"],`
+      },
+      // Aggiorna l'array validTemplates in config/templates.ts
+      {
+        type: "modify",
+        path: "config/templates.ts",
+        pattern: /(\bvalidTemplates\s*=\s*\[)([^\]]*)(\])/,
+        template: "$1$2{{#if $2}}, {{/if}}'{{name}}',$3"
+        },
     ],
   };

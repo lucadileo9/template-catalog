@@ -21,6 +21,9 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@pizzeria/*": ["templates/pizzeria-template/*"], // Risorse del template pizzeria
+      "@estetista/*": ["templates/estetista-template/*"], // Risorse del template estetista
+
       "@app/*": ["app/*"], // File globali dell'app
       "@global-ui/*": ["components/ui/*"], // Componenti UI globali (ShadCN)
       "@global-utils/*": ["components/utils/*"], // Utility globali
@@ -31,8 +34,6 @@
       "@public/*": ["public/*"], // Asset statici globali
       "@templates/*": ["templates/*"], // Template globali
 
-      "@pizzeria/*": ["templates/pizzeria-template/*"], // Risorse del template pizzeria
-      "@estetista/*": ["templates/estetista-template/*"], // Risorse del template estetista
 
 
     }
