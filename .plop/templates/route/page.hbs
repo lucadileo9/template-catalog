@@ -4,9 +4,14 @@ import React from 'react';
 
 export default function {{properCase routeName}}Page() {
   return (
-    <div>
+    <>
       <h1>Pagina {{properCase routeName}}</h1>
       <p>Questa è la pagina {{routeName}} del template {{properCase templateName}}.</p>
-    </div>
+      <div>
+        <p>Contenuto della pagina {{routeName}}.</p>
+        <p>Puoi personalizzare questo contenuto come preferisci.</p>
+        <p>Questa pagina è parte del template {{properCase templateName}}.</p>
+      </div>
+    </>
   );
 }
