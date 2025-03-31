@@ -1,9 +1,6 @@
 // app/layout.tsx
 
 import './globals.css';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Template Catalog',
@@ -17,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body>
         <main>{children}</main>
         {/* Pulsante per tornare al catalogo */}
         <div style={{ position: 'fixed', bottom: '20px', right: '20px' }}>

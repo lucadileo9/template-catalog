@@ -1,7 +1,7 @@
 export const templateConfig = {
     colors: {
-      primary: '#FF5733',
-      secondary: '#33FF57',
+      primary: '#FF0000',
+      secondary: '#000000',
     },
     logo: '/images/pizzeria-logo.png',
     menuItems: [
