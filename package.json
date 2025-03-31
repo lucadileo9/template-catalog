@@ -9,9 +9,7 @@
     "lint": "next lint",
     "new-template": "plop template",
     "new-route": "plop route",
-    "plop": "plop",
-    "plop:pizzeria": "cd templates/pizzeria-template && npx plop",
-    "plop:estetista": "cd templates/estetista-template && npx plop"
+    "new-component": "plop component"
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.2",
