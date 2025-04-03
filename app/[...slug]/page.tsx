@@ -2,6 +2,7 @@
 import dynamic from 'next/dynamic';
 import { notFound } from 'next/navigation';
 import { validTemplates } from '../../config/templates';
+import { PageProps } from '.next/types/app/layout';
 
 
 interface TemplatePageParams {
@@ -10,8 +11,13 @@ interface TemplatePageParams {
   };
 }
 
-export default async function TemplatePage({ params }: TemplatePageParams) {
-  const { slug } = params;
+export default async function TemplatePage({ params }: PageProps) {
+  
+  const resolvedParams = await params;
+  if (!resolvedParams) {
+    notFound();
+  }
+  const { slug } = resolvedParams;
 
   // Il primo segmento è il nome del template
   const templateName = slug[0]; // Ad esempio, "pizzeria"
