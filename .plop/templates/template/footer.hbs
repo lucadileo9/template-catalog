@@ -6,14 +6,12 @@ import Link from 'next/link';
 
 const Footer: React.FC<{{pascalCase name}}Props> = () => {
   return ( 
-    <>
-    <footer className="border-t py-8 relative z-10">
-      <div className="container mx-auto px-4 text-center">
+    <footer className="border-t p-8 z-10">
+      <div className="px-4 text-center">
         <p className="mb-4">© {new Date().getFullYear()} <Link href="" className="font-bold underline-offset-4 hover:underline">Qualcosa</Link> Qualcos&apos;altro</p>
         <p className="text-sm">&quot;Lorem Ipsum&quot;</p>
       </div>
     </footer>
-  </>
   );
   
 };

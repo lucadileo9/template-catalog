@@ -16,6 +16,17 @@ module.exports = {
   		notebook: '1366px',
   		desktop: '1920px'
   	},
+	container: {
+		center: true, // Centra automaticamente il contenitore
+		padding: {
+			DEFAULT: '0.5rem', // Padding predefinito (ridotto)
+			phone: '0.5rem',   // Padding per schermi piccoli
+			tablet: '1rem',    // Padding per tablet
+			laptop: '2rem',    // Padding per laptop
+			notebook: '3rem',  // Padding per notebook
+			desktop: '4rem',   // Padding per desktop
+		},
+	  },
   	extend: {
   		colors: {
   			'light-blue': '#2E8CAD',
