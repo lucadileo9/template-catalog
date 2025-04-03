@@ -30,6 +30,7 @@ module.exports = {
         name: "label",
         message: "Inserisci l'etichetta visibile per la route (es. Menu): ",
         validate: function (value) {
+          if (!/.+/.test(value)) {
             return "Devi inserire un'etichetta per la route";
           }
           return true;
