@@ -30,11 +30,13 @@ module.exports = {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				DEFAULT: 'var(--primary)', // ATTENZIONE: questi colori verranno applicati anche alle componenti shadcn
+				// per ripristinare il colore originale reinserire: hsl(var(--primary))
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
-  				DEFAULT: 'hsl(var(--secondary))',
+  				DEFAULT: 'var(--secondary)', // ATTENZIONE: questi colori verranno applicati anche alle componenti shadcn
+				// per ripristinare il colore originale reinserire: hsl(var(--secondary))
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
   			muted: {
