@@ -4,24 +4,40 @@ import React from "react";
 import {{pascalCase name}}Props from "./index.types";
 import Link from 'next/link';
 import Image from "next/image";
+import {templateConfig} from "@{{kebabCase name}}/config";
+import { Button } from '@global-ui/button';
 
-const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = () => {
+
+const Header: React.FC<{{pascalCase name}}Props> = () => {
   return (
-    <header className="sticky flex w-screen py-6 justify-between bg-[#FDF7F7] absolute top-0 z-10">
-        <Link href="/" >
-          <Image src="" alt="Logo"   width={1772} height={1773} className="px-10  justify-center item-start  h-[53px] w-auto cursor-pointer" />
-        </Link>
+      <header className="border-b">
+        <div className="container mx-auto flex h-16 items-center justify-between">
+          {/* Logo on the left */}
+          <div className="flex items-center">
+            <Link href="/" className="flex items-center space-x-2">
+              <Image src="/logo_base.png" alt="Logo" width={40} height={40} className="rounded" />
+            </Link>
+          </div>
 
-        <nav className="inline-flex center space-x-5" >
-          <Link href="" className="">Elemento 1</Link>
-          <Link href=""  className="">Elemento 2</Link>
-        </nav>
+          {/* Navigation in the center */}
+          <nav className="mx-6 flex items-center space-x-4 lg:space-x-6">
+           {templateConfig.menuItems.map((item) => (
+            <Link
+              key={item.label}
+              href={item.link}
+            >
+            {item.label}
+            </Link>
+            ))}
+          </nav>
 
-        <div className="inline-flex  items-end px-10  space-x-3">
-            <button>Qualcosa</button>
+          {/* Button on the right */}
+          <div className="flex items-center">
+            <Button>Get Started</Button>
+          </div>
         </div>
     </header>
   );
 };
 
-export default {{pascalCase name}};
+export default Header;

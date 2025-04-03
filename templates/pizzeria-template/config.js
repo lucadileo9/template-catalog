@@ -5,8 +5,8 @@ export const templateConfig = {
     },
     logo: '/images/pizzeria-logo.png',
     menuItems: [
-      { label: 'Home', link: '/' },
-      { label: 'Menu', link: '/menu' },
-      { label: 'Contatti', link: '/contatti' },
-    ],
+      { label: 'Home', link: 'pizzeria/' },
+      { label: 'Menu', link: 'pizzeria/menu' },
+      { label: 'Contatti', link: 'pizzeria/contatti' },
+],
   };
