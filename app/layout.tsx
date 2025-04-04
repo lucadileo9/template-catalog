@@ -1,9 +1,6 @@
 // app/layout.tsx
-import { Button } from '@global-ui/button';
+import ButtonHome from './components/atoms/ButtonHome';
 import './globals.css';
-import { LogOut } from 'lucide-react';
-import Button2 from './components/button';
-import HomeButton from './components/button';
 
 export const metadata = {
   title: 'Template Catalog',
@@ -20,7 +17,7 @@ export default function RootLayout({
       <body>
         <main>{children}</main>
         {/* Pulsante per tornare al catalogo */}
-        <HomeButton></HomeButton>
+        <ButtonHome></ButtonHome>
       </body>
     </html>
   );
