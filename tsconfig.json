@@ -21,8 +21,6 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@pizzeria/*": ["templates/pizzeria-template/*"], // Risorse del template pizzeria
-      "@estetista/*": ["templates/estetista-template/*"], // Risorse del template estetista
 
       "@app/*": ["app/*"], // File globali dell'app
       "@global-ui/*": ["components/ui/*"], // Componenti UI globali (ShadCN)
