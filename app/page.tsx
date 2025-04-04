@@ -10,9 +10,9 @@ const templates = [
 
 export default function HomePage() {
   return (    <>  
-    <div className='relative flex flex-col min-h-screen'>
+    <div className='relative flex flex-col min-h-screen bg-[#222C7C]'>
       <Header /> 
-        <div className='container mx-auto flex-grow'>
+        <div className='container mx-auto flex-grow  '>
         <Hero />    
         </div>
       <Footer />
