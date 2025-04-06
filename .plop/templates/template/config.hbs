@@ -2,11 +2,12 @@ export const templateConfig = {
   colors: {
     primary: "#FF5733",
     secondary: "#33FF57",
+    tertiary: "#3357FF",
   },
   logo: "/images/{{kebabCase name}}-logo.png",
   menuItems: [
-    { label: "Home", link: "{{kebabCase name}}/" },
-    { label: "About", link: "{{kebabCase name}}/about" },
-    { label: "Contacts", link: "{{kebabCase name}}/contacts" },
+    { label: "Home", link: "/{{kebabCase name}}/" },
+    { label: "About", link: "/{{kebabCase name}}/about" },
+    { label: "Contacts", link: "/{{kebabCase name}}/contacts" },
   ],
 };
