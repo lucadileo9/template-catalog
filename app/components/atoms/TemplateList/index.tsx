@@ -12,7 +12,7 @@ const TemplateList: FC<TemplateListProps> = ({ }) => {
             href={`/${template}`}
             className="block w-full px-6 py-3 bg-[#FFD600] hover:bg-[#FFC700] text-[#222C7C] font-medium rounded-lg transition-colors text-center"
           >
-            {template}
+            {template.charAt(0).toUpperCase() + template.slice(1)}
           </Link>
         </li>
       ))}
