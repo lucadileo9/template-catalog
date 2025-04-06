@@ -1,5 +1,7 @@
 // .plop/generators/template.js
 
+const { type } = require("os");
+
 module.exports = {
     description: "Crea un nuovo template",
     prompts: [
@@ -34,6 +36,12 @@ module.exports = {
         path: "templates/{{kebabCase name}}-template/components/index.ts",
         template: "// Componenti verranno generati qui automaticamente",
       },
+      // Crea la cartella col nome del template nella cartella public
+      {
+        type  : "add",
+        path  : "/public/{{kebabCase name}}/images",
+        template: "// Immagini del template verranno aggiunte qui automaticamente",
+      },
       // Crea il file di configurazione config.js
       {
         type: "add",
@@ -51,12 +59,6 @@ module.exports = {
         type: "add",
         path: "templates/{{kebabCase name}}-template/styles/globals.css",
         templateFile: ".plop/templates/template/globals-css.hbs",
-      },
-      // Crea la cartella public con la sottocartella images
-      {
-        type: "add",
-        path: "templates/{{kebabCase name}}-template/public/images/placeholder.png",
-        templateFile: ".plop/templates/template/placeholder-image.hbs",
       },
       {
         type: "modify",
