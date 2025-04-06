@@ -1,2 +1,2 @@
 // config/templates.ts
-export const validTemplates = [,];
+export const validTemplates = ['estetista',];

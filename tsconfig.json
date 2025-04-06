@@ -21,6 +21,7 @@
     ],
     "baseUrl": ".",
     "paths": {
+      "@estetista/*": ["templates/estetista-template/*"],
 
       "@app/*": ["app/*"], // File globali dell'app
       "@global-ui/*": ["components/ui/*"], // Componenti UI globali (ShadCN)

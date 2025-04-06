@@ -10,12 +10,12 @@ module.exports = {
   ],
   theme: {
   	screens: {
-  		phone: '320px',
-  		tablet: '696px',
-  		laptop: '1080px',
-  		notebook: '1366px',
-  		desktop: '1920px'
-  	},
+		sm: '640px',  // Telefoni in landscape e tablet verticali
+		md: '768px',  // Tablet verticali e piccoli laptop
+		lg: '1024px', // Laptop standard
+		xl: '1280px', // Desktop larghi
+		'2xl': '1536px', // Schermi ultra-wide
+		},
 	container: {
 		center: true, // Centra automaticamente il contenitore
 		padding: {
