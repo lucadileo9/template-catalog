@@ -50,6 +50,11 @@ module.exports = {
 				// per ripristinare il colore originale reinserire: hsl(var(--secondary))
   				foreground: 'hsl(var(--secondary-foreground))'
   			},
+			tertiary: {
+				DEFAULT: 'var(--tertiary)', // ATTENZIONE: questi colori verranno applicati anche alle componenti shadcn
+				// per ripristinare il colore originale reinserire: hsl(var(--tertiary))
+				foreground: 'hsl(var(--tertiary-foreground))'
+			},			
   			muted: {
   				DEFAULT: 'hsl(var(--muted))',
   				foreground: 'hsl(var(--muted-foreground))'
