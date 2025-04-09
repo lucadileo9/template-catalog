@@ -2,7 +2,7 @@ export const templateConfig = {
   colors: {
     primary: "#F6D1C1",
     secondary: "#FFF9F4",
-    terziary: "#FFF9F4",
+    tertiary: "#FFF9F4",
   },
   logo: "/images/estetista-logo.png",
   menuItems: [
