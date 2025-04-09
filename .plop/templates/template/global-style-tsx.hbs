@@ -1,0 +1,12 @@
+"use client"; // Contrassegna il componente come Client Component
+
+import { createGlobalStyle } from 'styled-components';
+import { templateConfig } from '@{{kebabCase name}}/config'; // Importa la configurazione del tema dal file di configurazione
+
+export const GlobalStyle = createGlobalStyle`
+  :root {
+    --primary: ${templateConfig.colors.primary};
+    --secondary: ${templateConfig.colors.secondary};
+    --tertiary: ${templateConfig.colors.tertiary};
+  }
+`;

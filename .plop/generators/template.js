@@ -60,6 +60,12 @@ module.exports = {
         path: "templates/{{kebabCase name}}-template/styles/globals.css",
         templateFile: ".plop/templates/template/globals-css.hbs",
       },
+       // Crea il file GlobalStyle.tsx nella cartella styles
+       {
+        type: "add",
+        path: "templates/{{kebabCase name}}-template/styles/GlobalStyle.tsx",
+        templateFile: ".plop/templates/template/global-style-tsx.hbs",
+      },
       {
         type: "modify",
         path: "tsconfig.json",

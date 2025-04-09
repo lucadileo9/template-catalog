@@ -12,13 +12,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+ 
+
   return (
-    <html lang="en">
-      <body>
-        <main>{children}</main>
-        {/* Pulsante per tornare al catalogo */}
+        <>
+        {children}
         <ButtonHome></ButtonHome>
-      </body>
-    </html>
-  );
+        </>
+);
 }

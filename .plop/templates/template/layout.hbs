@@ -4,6 +4,8 @@ import '@{{kebabCase name}}/styles/globals.css';
 import { Inter } from 'next/font/google';
 import Header from '@{{kebabCase name}}/components/molecules/Header';
 import Footer from '@{{kebabCase name}}/components/molecules/Footer';
+import { GlobalStyle } from '@{{kebabCase name}}/styles/GlobalStyle';
+// Questa componente serve solo per sovrascrivere i colori quando si passa da un template ad un altro        
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -18,16 +20,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-      // Quando questo template viene usato al di fuori del catalogo, aggiungi <html> e <body> qui
-      // Esempio:
-      // <html lang="en">
-      // <body className={inter.className}>
-        <div className='relative flex flex-col min-h-screen'>
-        <Header />
-        <main className='flex-grow'>{children}</main>
-        <Footer />
-        </div>
-    //  </body>
-    // </html>
+      <html lang="en">
+        <GlobalStyle />
+        <body className={inter.className}>
+          <div className='relative flex flex-col min-h-screen'>
+          <Header />
+          <main className='flex-grow'>{children}</main>
+          <Footer />
+          </div>
+        </body>
+     </html>
   );
 }
