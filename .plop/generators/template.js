@@ -71,7 +71,7 @@ module.exports = {
         type: "modify",
         path: "config/templates.ts",
         pattern: /(\bvalidTemplates\s*=\s*\[)([^\]]*)(\])/,
-        template: "$1$2{{#if $2}}, {{/if}}'{{name}}',$3"
+        template: "$1$2{{#if $2}}, {{/if}}{ name: '{{name}}', description: '' },$3"
       },
       // Crea il componente Header
     {

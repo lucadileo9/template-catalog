@@ -26,7 +26,8 @@ export default async function TemplatePage({ params }: PageProps) {
   console.log('templateName', templateName);
 
   // Verifica se il template esiste
-  if (!validTemplates.includes(templateName)) {
+  if (!validTemplates.some((template) => template.name === templateName)) {
+    console.error(`FUCK! Template "${templateName}" non trovato.`);
     notFound(); // Mostra una pagina 404 se il template non esiste
   }
 
