@@ -7,7 +7,7 @@ import Image from "next/image";
 const CardComponent: FC<CardComponentProps> = ({ title, description, imageUrl, href }) => {
   return <>
       <Link href={href} className="block">
-      <Card className="bg-white shadow-md hover:shadow-lg transform transition-transform hover:-translate-y-2 cursor-pointer rounded-lg overflow-hidden">
+      <Card className="bg-white shadow-md hover:shadow-lg transform transition-transform hover:-translate-y-2 cursor-pointer rounded-lg ">
         
         {/* Contenuto */}
         <CardHeader>
@@ -15,8 +15,8 @@ const CardComponent: FC<CardComponentProps> = ({ title, description, imageUrl, h
           src={imageUrl}
           alt={`${title} screenshot`}
           width={500}
-          height={192}
-          className="w-full h-48 object-cover"
+          height={200}
+          className="w-full  object-cover"
         />
           <CardTitle className="text-[var(--blu)]">{title}</CardTitle>
           <CardDescription className="text-gray-600">{description}</CardDescription>
