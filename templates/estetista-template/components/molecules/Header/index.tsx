@@ -5,8 +5,6 @@ import EstetistaProps from "./index.types";
 import Link from 'next/link';
 import Image from "next/image";
 import {templateConfig} from "@estetista/config";
-import { Button } from '@global-ui/button';
-
 
 const Header: React.FC<EstetistaProps> = () => {
   return (

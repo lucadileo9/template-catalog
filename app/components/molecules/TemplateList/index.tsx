@@ -1,9 +1,6 @@
 import React, { FC } from "react";
 import TemplateListProps from "./index.types"
 import { validTemplates } from 'config/templates';
-import Link from "next/link";
-import { Card, CardHeader, CardTitle, CardDescription } from "@global-ui/card";
-import Image from "next/image";
 import CardComponent from "@app/components/atoms/CardComponent";
 
 const TemplateList: FC<TemplateListProps> = ({ }) => {

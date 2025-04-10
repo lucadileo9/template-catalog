@@ -1,7 +1,6 @@
 import React, { FC } from "react";
 import HeaderProps from "./index.types"
 import Link from "next/link";
-import { Home, Info, Mail } from "lucide-react";
 import HeaderMobile from "../HeaderMobile";
 import Image from "next/image";
 import ButtonContattaci from "@app/components/atoms/ButtonContattaci";
