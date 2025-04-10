@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const Footer: React.FC<EstetistaProps> = () => {
   return ( 
-    <footer className="w-full border-t py-6" style={{ backgroundColor: "#EAE0D5" }}>
+    <footer className="w-full border-t py-6 bg-tertiary" >
       <div className="container flex flex-col items-center justify-between gap-4 md:flex-row">
         <p className="text-center text-sm text-muted-foreground md:text-left">
           &copy; {new Date().getFullYear()} Beauty Salon. All rights reserved.

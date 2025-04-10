@@ -19,7 +19,7 @@ export default function RootLayout({
       <html lang="it">
        <GlobalStyle />
       <body className={inter.className}>
-        <div className='relative flex flex-col min-h-screen'>
+        <div className='relative flex flex-col min-h-screen bg-tertiary'>
         <Header />
         <main className=' flex-grow'>{children}</main>
         <Footer />

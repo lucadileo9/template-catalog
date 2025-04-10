@@ -8,7 +8,7 @@ import {templateConfig} from "@estetista/config";
 
 const Header: React.FC<EstetistaProps> = () => {
   return (
-    <header className="sticky top-0 z-50 w-full border-b bg-[#D8CFC4] backdrop-blur supports-[backdrop-filter]:bg-[#D8CFC4]/60">
+    <header className="sticky top-0 z-50 w-full border-b bg-tertiary backdrop-blur supports-[backdrop-filter]:bg-[#D8CFC4]/60">
     <div className="container flex h-16 items-center justify-between">
       <Link href="/estetista/" className="flex items-center">
         <Image
