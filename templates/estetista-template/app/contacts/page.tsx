@@ -9,29 +9,29 @@ export default function ContactsPage() {
        <div className="bg-primary px-4 py-12">
       <div className="container mx-auto max-w-4xl space-y-8 bg-secondary p-8 rounded-lg shadow-2xl">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-primary">Contact Us</h1>
-          <p className="mt-4 text-lg text-gray-500">We&apos;d love to hear from you. Get in touch with us.</p>
+          <h1 className="text-4xl font-bold tracking-tight text-primary">Contattaci</h1>
+          <p className="mt-4 text-lg text-gray-500">Saremmo felici di sentirti. Mettiti in contatto con noi.</p>
         </div>
 
         <div className="mx-auto max-w-2xl space-y-6">
           <div className="space-y-2">
-            <h2 className="text-2xl font-bold text-primary">Contact Information</h2>
-            <p className="text-gray-600">You can reach us using the following contact details.</p>
+            <h2 className="text-2xl font-bold text-primary">Informazioni di Contatto</h2>
+            <p className="text-gray-600">Puoi raggiungerci utilizzando i seguenti dettagli di contatto.</p>
           </div>
 
           <div className="space-y-4 rounded-lg p-6 text-primary ">
             <div className="flex items-start space-x-3">
               <MapPin className="h-5 w-5 text-gray-600" />
               <div>
-                <h3 className="font-medium">Address</h3>
-                <p className="text-sm text-gray-600">123 Beauty Street, City Center, 12345</p>
+                <h3 className="font-medium">Indirizzo</h3>
+                <p className="text-sm text-gray-600">Via Ganaceto 44, Modena</p>
               </div>
             </div>
 
             <div className="flex items-start space-x-3">
               <Phone className="h-5 w-5 text-gray-600" />
               <div>
-                <h3 className="font-medium">Phone</h3>
+                <h3 className="font-medium">Telefono</h3>
                 <p className="text-sm text-gray-600">+1 (555) 123-4567</p>
               </div>
             </div>
@@ -47,11 +47,11 @@ export default function ContactsPage() {
             <div className="flex items-start space-x-3">
               <Clock className="h-5 w-5 text-gray-600" />
               <div>
-                <h3 className="font-medium">Hours</h3>
+                <h3 className="font-medium">Orari</h3>
                 <div className="text-sm text-gray-600">
-                  <p>Monday - Friday: 9:00 AM - 8:00 PM</p>
-                  <p>Saturday: 9:00 AM - 6:00 PM</p>
-                  <p>Sunday: 10:00 AM - 4:00 PM</p>
+                  <p>Lunedì - Venerdì: 9:00 - 20:00</p>
+                  <p>Sabato: 9:00 - 18:00</p>
+                  <p>Domenica: 10:00 - 16:00</p>
                 </div>
               </div>
             </div>

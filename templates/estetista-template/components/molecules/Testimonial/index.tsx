@@ -7,36 +7,36 @@ const Testimonial: FC<TestimonialProps> = ({ }) => {
         <div className=" px-4 md:px-6">
           <div className="flex flex-col items-center justify-center space-y-4 text-center">
             <div className="space-y-2">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">What Our Clients Say</h2>
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Cosa Dicono i Nostri Clienti</h2>
               <p className="max-w-[900px] text-gray-700 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
-                Hear from our satisfied customers
+                Ascolta le testimonianze dei nostri clienti soddisfatti
               </p>
             </div>
           </div>
           <div className="mx-auto grid max-w-5xl items-center gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
-                quote: "The facial treatment was amazing! My skin feels so refreshed and rejuvenated.",
+                quote: "Il trattamento viso è stato fantastico! La mia pelle si sente così rinfrescata e ringiovanita.",
                 author: "Maria G.",
               },
               {
-                quote: "I love the attention to detail in their manicures. The staff is professional and friendly.",
+                quote: "Adoro l'attenzione ai dettagli nelle loro manicure. Il personale è professionale e cordiale.",
                 author: "Laura S.",
               },
               {
-                quote: "The massage therapy helped relieve my back pain. I'll definitely be coming back!",
+                quote: "La terapia massaggi ha aiutato a ridurre il mio mal di schiena. Tornerò sicuramente!",
                 author: "Anna P.",
               },
               {
-                quote: "I had a wonderful experience at the salon. The atmosphere is relaxing and the staff is very skilled.",
+                quote: "Ho avuto un'esperienza meravigliosa al salone. L'atmosfera è rilassante e lo staff è molto competente.",
                 author: "Sofia R.",
               },
               {
-                quote:  "The waxing service was quick and virtually painless. Highly recommend for everyone!",
+                quote: "Il servizio di epilazione è stato veloce e quasi indolore. Lo consiglio vivamente a tutti!",
                 author: "Clara T.",
               },
               {
-                quote: "I love the variety of services they offer. The team is always professional and friendly.",
+                quote: "Mi piace la varietà di servizi che offrono. Il team è sempre professionale e cordiale.",
                 author: "Elena M.",
               },
 

@@ -14,22 +14,21 @@ const Hero: React.FC<HeroProps> = () => {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-                  Welcome to Beauty Salon
+                  Benvenuto nel Centro JEstetico
                 </h1>
                 <p className="max-w-[600px] text-gray-700 md:text-xl">
-                  Discover a world of beauty and relaxation. Our professional team is dedicated to enhancing your
-                  natural beauty.
+                Scopri un mondo di bellezza e relax. Il nostro team di professionisti è dedicato a valorizzare la tua bellezza naturale.
                 </p>
               </div>
               <div className="flex flex-col gap-2 min-[400px]:flex-row">
                 <Link href="/services">
                   <Button variant="outline" className="px-8 bg-secondary text-primary">
-                    Our Services
+                    I nostri servizi
                   </Button>
                 </Link>
                 <Link href="/contact">
                   <Button variant="outline" className="px-8 text-primary">
-                    Contact Us
+                    Contattaci
                   </Button>
                 </Link>
               </div>

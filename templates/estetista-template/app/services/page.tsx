@@ -6,116 +6,116 @@ import React from 'react';
 export default function ServicesPage() {
   const services = [
     {
-      category: "Facial Treatments",
+      category: "Trattamenti Viso",
       items: [
         {
-          name: "Classic Facial",
-          description: "A deep cleansing facial that includes exfoliation, extraction, and hydration.",
+          name: "Trattamento Viso Classico",
+          description: "Un trattamento viso che include pulizia profonda, esfoliazione, estrazione e idratazione.",
           duration: "60 min",
           price: "€80",
         },
         {
-          name: "Anti-Aging Facial",
-          description: "Targets fine lines and wrinkles with specialized serums and techniques.",
+          name: "Trattamento Viso Anti-Età",
+          description: "Contrasta rughe e linee sottili con sieri specializzati e tecniche mirate.",
           duration: "75 min",
           price: "€95",
         },
         {
-          name: "Hydrating Facial",
-          description: "Intensive hydration for dry and dehydrated skin.",
+          name: "Trattamento Viso Idratante",
+          description: "Idratazione intensiva per pelli secche e disidratate.",
           duration: "60 min",
           price: "€85",
         },
         {
-          name: "Acne Treatment",
-          description: "Specialized treatment for acne-prone skin.",
+          name: "Trattamento per l'Acne",
+          description: "Trattamento specifico per pelli soggette ad acne.",
           duration: "60 min",
           price: "€90",
         },
       ],
     },
     {
-      category: "Body Treatments",
+      category: "Trattamenti Corpo",
       items: [
         {
-          name: "Swedish Massage",
-          description: "A gentle, relaxing massage that improves circulation and relieves tension.",
+          name: "Massaggio Svedese",
+          description: "Un massaggio delicato e rilassante che migliora la circolazione e allevia la tensione.",
           duration: "60 min",
           price: "€90",
         },
         {
-          name: "Deep Tissue Massage",
-          description: "Targets deeper layers of muscle and connective tissue.",
+          name: "Massaggio Tissutale Profondo",
+          description: "Agisce sugli strati più profondi dei muscoli e del tessuto connettivo.",
           duration: "60 min",
           price: "€100",
         },
         {
-          name: "Hot Stone Massage",
-          description: "Uses heated stones to relax muscles and improve circulation.",
+          name: "Massaggio con Pietre Calde",
+          description: "Utilizza pietre calde per rilassare i muscoli e migliorare la circolazione.",
           duration: "75 min",
           price: "€110",
         },
         {
-          name: "Body Scrub",
-          description: "Exfoliates and rejuvenates the skin, leaving it soft and smooth.",
+          name: "Scrub Corpo",
+          description: "Esfolia e rigenera la pelle, lasciandola morbida e liscia.",
           duration: "45 min",
           price: "€70",
         },
       ],
     },
     {
-      category: "Nail Services",
+      category: "Servizi Manicure e Pedicure",
       items: [
         {
-          name: "Classic Manicure",
-          description: "Includes nail shaping, cuticle care, and polish application.",
+          name: "Manicure Classica",
+          description: "Include modellatura delle unghie, cura delle cuticole e applicazione di smalto.",
           duration: "30 min",
           price: "€35",
         },
         {
-          name: "Gel Manicure",
-          description: "Long-lasting gel polish that resists chipping.",
+          name: "Manicure Semipermanente",
+          description: "Smalto semipermanente resistente alle scheggiature.",
           duration: "45 min",
           price: "€45",
         },
         {
-          name: "Classic Pedicure",
-          description: "Includes foot soak, exfoliation, nail care, and polish.",
+          name: "Pedicure Classica",
+          description: "Include ammollo dei piedi, esfoliazione, cura delle unghie e smalto.",
           duration: "45 min",
           price: "€50",
         },
         {
-          name: "Spa Pedicure",
-          description: "Luxurious pedicure with extended massage and paraffin treatment.",
+          name: "Pedicure Spa",
+          description: "Pedicure di lusso con massaggio esteso e trattamento alla paraffina.",
           duration: "60 min",
           price: "€65",
         },
       ],
     },
     {
-      category: "Hair Removal",
+      category: "Epilazione",
       items: [
         {
-          name: "Eyebrow Waxing",
-          description: "Shapes and defines eyebrows.",
+          name: "Epilazione Sopracciglia",
+          description: "Modella e definisce le sopracciglia.",
           duration: "15 min",
           price: "€20",
         },
         {
-          name: "Lip Waxing",
-          description: "Removes unwanted hair from the upper lip.",
+          name: "Epilazione Labbro Superiore",
+          description: "Rimuove i peli indesiderati dal labbro superiore.",
           duration: "10 min",
           price: "€15",
         },
         {
-          name: "Full Leg Waxing",
-          description: "Removes hair from the entire leg.",
+          name: "Epilazione Gamba Intera",
+          description: "Rimuove i peli da tutta la gamba.",
           duration: "45 min",
           price: "€60",
         },
         {
-          name: "Brazilian Waxing",
-          description: "Complete hair removal from the bikini area.",
+          name: "Epilazione Brasiliana",
+          description: "Rimozione completa dei peli dall'area bikini.",
           duration: "30 min",
           price: "€55",
         },
@@ -127,8 +127,8 @@ export default function ServicesPage() {
     <div className=" px-4 py-12 bg-secondary">
       <div className="container mx-auto max-w-5xl space-y-8">
         <div className="text-center">
-          <h1 className="text-4xl font-bold tracking-tight text-primary">Our Services</h1>
-          <p className="mt-4 text-lg text-gray-500">Explore our range of beauty and wellness services</p>
+          <h1 className="text-4xl font-bold tracking-tight text-primary">I Nostri Servizi</h1>
+          <p className="mt-4 text-lg text-gray-500">Scopri la nostra gamma di servizi di bellezza e benessere</p>
         </div>
 
         <div className="space-y-12">
@@ -141,7 +141,7 @@ export default function ServicesPage() {
                     <CardHeader className="p-4">
                       <CardTitle className="text-lg">{service.name}</CardTitle>
                       <CardDescription className="text-sm">
-                        Duration: {service.duration} | Price: {service.price}
+                        Durata: {service.duration} | Prezzo: {service.price}
                       </CardDescription>
                     </CardHeader>
                     <CardContent className="p-4">
