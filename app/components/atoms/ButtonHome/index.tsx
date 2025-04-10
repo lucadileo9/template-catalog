@@ -9,7 +9,7 @@ const ButtonHome: FC<ButtonHomeProps> = ({ }) => {
   const router = useRouter(); 
   return <>
       <Button
-      className="fixed bottom-4 right-4 w-12 h-12 rounded-full bg-primary hover:bg-red-300 shadow-md transition-colors"
+      className="fixed bottom-4 right-4 w-12 h-12 rounded-full bg-transparent hover:bg-white/30  shadow-md transition-colors"
       variant="outline" 
       size="icon" 
       onClick={() => router.push("/")} 
