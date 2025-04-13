@@ -1,3 +1,4 @@
+
 ---
 
 # **Template Catalog**
@@ -40,6 +41,28 @@ Il **Template Catalog** è un sistema modulare per creare e gestire template Nex
 
 ## **Struttura del Progetto**
 
+
+### **Panoramica**
+
+Il progetto è organizzato in modo modulare per supportare la creazione e la gestione di **template indipendenti** (es. siti per pizzerie, centri estetici, ecc.). Ogni template è autosufficiente e contiene le sue risorse specifiche, mentre alcune risorse sono condivise a livello globale per garantire coerenza e riusabilità.
+
+La struttura si divide in due parti principali:
+1. **Cartelle Globali**: Contengono risorse condivise tra tutti i template, come componenti ShadCN, utility globali e configurazioni. 
+   - **`app/`**: Cartella principale dell'app Next.js, gestisce il routing e le pagine globali.
+     - **`page.tsx`**: Pagina principale del catalogo template.
+     - **`[...slug]/page.tsx`**: Carica il template richiesto in base al percorso URL.
+   - **`components/`**: Contiene componenti condivisi tra tutti i template.
+   - **`config/`**: File di configurazione globale (es. template validi, siti esterni).
+   - **`public/`**: Contiene risorse statiche globali e ***sottocartelle per le risorse specifiche di ciascun template.***
+   - **`components.json`**: Configurazione ShadCN per componenti UI globali.
+2. **Cartelle dei Template**: Contengono risorse specifiche per ciascun template, come pagine, stili e immagini.
+    - **`config.js`**: Contiene la configurazione del template, inclusi colori, menu items e logo.
+    - **`styles/GlobalStyle.tsx`**: Gestisce i colori dinamici del template tramite variabili CSS (`--primary`, `--secondary`, ecc.).
+    - **`app/layout.tsx`**: Definisce il layout del template, inclusi header, footer e altre sezioni comuni.
+    - **`app/page.tsx`**: Pagina principale del template.
+    - **`public/<nome-template>/`**: Contiene risorse statiche specifiche del template, come immagini o file. SONO NELLA CARTELLA GENERALE
+---
+### **Struttura Dettagliata**
 ```
 └── lucadileo9-template-catalog/
     ├── README.md                     # Documentazione generale del progetto.
@@ -66,8 +89,10 @@ Il **Template Catalog** è un sistema modulare per creare e gestire template Nex
     │   └── ui/                       # Componenti ShadCN globali.
     │       └── button.tsx            # Componente globale ShadCN (es. pulsante).
     ├── config/                       # Configurazioni globali.
-    │   └── templates.ts              # Array dei template validi (`validTemplates`).
-    ├── public/                       # Risorse statiche globali (es. favicon).
+    │   ├── templates.ts              # Array dei template validi (`validTemplates`).
+    │   └── external-sites.ts         # File con i siti esterni prodotti.
+    ├── public/                       # Risorse statiche globali (es. favicon). 
+    │   ├── estetista/                # Risorse specifiche per il template estetista.
     ├── templates/                    # Cartelle dei template indipendenti.
     │   ├── estetista-template/       # Template specifico per un centro estetico.
     │      ├── config.js              # Configurazione del template (colori, menu, logo).
@@ -78,10 +103,9 @@ Il **Template Catalog** è un sistema modulare per creare e gestire template Nex
     │      │   └── page.tsx           # Pagina principale del template.
     │      ├── components/            # Componenti locali del template.
     │      │   └── index.ts           # Esportazione centralizzata dei componenti.
-    │      ├── public/                # Risorse statiche locali (es. immagini).
-    │      │   └── images/            # Immagini specifiche del template.
     │      └── styles/                # Stili locali del template.
-    │          └── globals.css        # Variabili CSS e stili globali.
+    │          ├── globals.css        # Stili globali del template.
+    │          └── GlobalStyle.tsx    # Gestisce i colori dinamici del template.
     └── .plop/                        # Configurazione di Plop per generatori.
         ├── generators/               # Generatori di Plop.
         │   ├── component.js          # Genera nuovi componenti.
@@ -104,13 +128,6 @@ Il **Template Catalog** è un sistema modulare per creare e gestire template Nex
                 ├── page.hbs          # Pagina principale del template.
                 └── placeholder-image.hbs # Immagine segnaposto.
 ```
-
-Ogni template ha la sua cartella nella directory `templates/` e contiene:
-- `config.js`: Configurazione specifica del template (colori, menu, logo).
-- `app/`: Pagine e layout del template.
-- `components/`: Componenti locali organizzati secondo Atomic Design.
-- `public/`: Risorse statiche locali.
-
 ---
 
 ## **Come Creare un Nuovo Template**
@@ -203,7 +220,6 @@ Plop automatizza la creazione di:
 ## **Note Finali**
 
 - Non modificare manualmente:
-  - `config/templates.ts` (aggiornato automaticamente da Plop).
   - La cartella `app/[...slug]/` (gestisce il routing dinamico).
 
 - Usa sempre gli alias per importare risorse locali o globali.
@@ -212,4 +228,4 @@ Plop automatizza la creazione di:
 
 Per ulteriori domande o chiarimenti, contatta il team di sviluppo.
 
----
+--- 
