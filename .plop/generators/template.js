@@ -38,9 +38,9 @@ module.exports = {
       },
       // Crea la cartella col nome del template nella cartella public
       {
-        type  : "add",
-        path  : "/public/{{kebabCase name}}/images",
-        template: "// Immagini del template verranno aggiunte qui automaticamente",
+        type: "add",
+        path: "public/{{kebabCase name}}/images/.gitkeep", // Aggiungi un file placeholder
+        template: "", // File vuoto
       },
       // Crea il file di configurazione config.js
       {
